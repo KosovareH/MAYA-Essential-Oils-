@@ -6,7 +6,7 @@
       rgba(197, 197, 184, 0.2),
       rgba(230, 210, 230, 0.2)
     ),
-    url(/img/hero/hero.png);
+    url(../img/hero/hero.png);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -220,7 +220,7 @@
       rgba(197, 197, 184, 0.2),
       rgba(230, 210, 230, 0.2)
     ),
-    url(/img/subscribe.jpg);
+    url(../img/subscribe.jpg);
   background-position: center;
   background-size: cover;
   font-weight: 700;
