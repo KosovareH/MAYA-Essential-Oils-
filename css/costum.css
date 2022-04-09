@@ -1,0 +1,362 @@
+/*---------------- HERO START--------------------*/
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(197, 197, 184, 0.2),
+      rgba(230, 210, 230, 0.2)
+    ),
+    url(/img/hero/hero.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 4.8rem;
+}
+.logo img {
+  width: 20rem;
+  margin: -25px;
+  padding: 0;
+}
+.nav-bar li {
+  list-style: none;
+  display: inline-block;
+  gap: 1.6rem;
+  align-items: right;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 3.2rem;
+}
+.nav-bar li:link,
+.nav-bar li:visited {
+  text-decoration: none;
+  color: #3e2422;
+  transition: all 0.01s;
+}
+.nav-bar li:hover,
+.nav-bar li:active {
+  text-decoration: none;
+  color: #f2d0c4;
+}
+.nav-bar ul li a {
+  color: #14040b;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+}
+.nav-bar li:hover::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f2d0c4;
+  display: block;
+  margin: auto;
+  transition: 0.01s;
+}
+.nav-bar ul li:hover::after {
+  width: 100%;
+}
+.hero-description {
+  width: 90%;
+  color: whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 50px;
+}
+.text-box h1 {
+  font-size: 62px;
+}
+.hero-description p {
+  max-width: 10px 0 40px;
+  font-size: 3rem;
+  /* color: #14040b; */
+  color: #3e2422;
+  margin-bottom: 20px;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none !important;
+  color: #3e2422;
+  border: 1px solid #3e2422;
+  padding: 8px 24px;
+  font-size: 13px;
+
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  color: #3e2422;
+  border: 3px solid #8e82c5;
+  background: #8e82c5;
+  transition: 0.01s;
+  margin: -2px;
+}
+/*---------------- HERO END ---------------------*/
+/*---------------- OILS START -------------------*/
+
+.oils-header {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.oils-header p {
+  font-size: 1.8rem;
+}
+.oils-body {
+  margin-bottom: 8rem;
+}
+.oils {
+  max-width: 100%;
+  text-align: left;
+  overflow: hidden;
+  box-shadow: 0 0 3px rgba(75, 76, 77, 30%);
+}
+.oils.first {
+  justify-self: end;
+}
+.oils-content {
+  padding: 1.6rem 1.2rem;
+}
+.oils-content .ternary-header {
+  font-size: 3rem;
+  margin-bottom: 1.8rem;
+}
+.oils-img img {
+  width: 100%;
+}
+.oils-content p {
+  font-size: 1.8rem;
+  text-align: left;
+}
+/*---------------- OILS END----------------------*/
+/*---------------- TESTIOMONIALS START ------------*/
+.testimonials {
+  width: 100%;
+  margin: auto;
+  padding-top: 9.6rem;
+  padding-bottom: 6.4rem;
+  text-align: center;
+  background-color: #ddd4d0;
+}
+.testimonial-header p {
+  font-size: 1.8rem;
+  margin-bottom: 8rem;
+}
+
+.wrapper {
+  /* 
+  height: 70%;
+
+  margin: 50px;
+ */
+  width: 100%;
+
+  border: 2px solid #3e2422;
+  justify-items: center;
+  row-gap: 4.8rem;
+  column-gap: 4.8rem;
+  padding: 25px;
+}
+.description {
+  font-size: 2.4rem;
+  padding-bottom: 20px;
+}
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.t-grid {
+  display: grid;
+  justify-items: center;
+  row-gap: 3.2rem;
+  column-gap: 4.8rem;
+}
+
+/*---------------- TESTIOMONIALS END ------------*/
+/* ------ Fetures Start ---- */
+.features-header {
+  text-align: center;
+}
+.features {
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+  padding: 4.8rem;
+}
+.feature {
+  list-style: none;
+  margin-bottom: 24px;
+}
+.feature li {
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.feature li:last-child {
+  margin-bottom: 0;
+}
+.feature ion-icon {
+  width: 24px;
+  height: 24px;
+}
+.feature-link:hover {
+  text-decoration: none;
+}
+/* ------ Fetures End ---- */
+/*---------------- CTA Start ------------*/
+.cta {
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(
+      rgba(197, 197, 184, 0.2),
+      rgba(230, 210, 230, 0.2)
+    ),
+    url(/img/subscribe.jpg);
+  background-position: center;
+  background-size: cover;
+  font-weight: 700;
+  color: #4b4c4d;
+  text-align: right;
+}
+.cta-img {
+  background-size: cover;
+}
+.subscribe-description {
+  margin: 0 auto;
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 37rem;
+}
+
+.subscribe-p {
+  max-width: 60%;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+.form {
+  margin-bottom: 2.4rem;
+}
+.form-email {
+  padding: 1.4rem 1.8rem;
+  border: 1px solid #4b4c4d;
+  width: 40rem;
+  font-size: 18px;
+  color: #4b4c4d;
+}
+.form-email:focus {
+  outline: 1px solid #3e2422;
+}
+
+.notice {
+  font-size: 1.4rem;
+  max-width: 50%;
+}
+.email-btn {
+  width: 12.8rem;
+  margin: -2px;
+}
+.email-btn:hover {
+  border: 1px solid #8e82c5;
+}
+/*---------------- CTA END ------------*/
+/*---------------- FOOTER START ----------------*/
+.footer-clean {
+  padding: 50px 0;
+  background-color: none;
+  color: #4b4c4d;
+}
+
+.footer-clean h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-clean ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-clean ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity: 1;
+}
+
+.footer-clean .item.social {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .footer-clean .item {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align: center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  margin-top: 22px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 991px) {
+  .footer-clean .item.social > a {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-clean .item.social > a {
+    margin-top: 10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 13px;
+  opacity: 0.6;
+}
