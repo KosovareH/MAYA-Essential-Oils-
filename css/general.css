@@ -18,9 +18,15 @@
   padding: 0;
   color: #4b4c4d;
 }
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #14040b;
+}
 html {
   /* font-size: 10px; */
   font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,7 +34,7 @@ body {
   font-weight: 400;
 }
 .container {
-  width: 100%;
+  width: 120rem;
   margin: 0 auto;
 }
 .grid {

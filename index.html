@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/costum.css" />
+    <link rel="stylesheet" href="./css/mediaqueries.css">
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -32,20 +33,27 @@
     <title>MAYA Essential Oils</title>
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
-        <a  href="index.html"
-          ><img src="./img/hero/maya-logo.png" alt="MAYA Logo"
-        /></a>
-      </div>
-      <div class="nav-bar">
-        <ul class="nav">
-          <li><a class="menu" href="#">HOME</a></li>
-          <li><a class="menu" href="#">ABOUT</a></li>
-          <li><a class="menu" href="#">BLOG</a></li>
-          <li><a class="menu" href="#">DIY</a></li>
-          <li><a class="menu" href="#">CONTACT</a></li>
-        </ul>
+    <header id="header" class="open-nav">
+      <div class="header">
+        <div class="logo">
+          <a  href="index.html"
+            ><img src="./img/hero/maya-logo.png" alt="MAYA Logo"
+          /></a>
+        </div>
+        <div class="nav-bar">
+          <ul class="nav">
+            <li><a class="menu" href="#">HOME</a></li>
+            <li><a class="menu" href="#">ABOUT</a></li>
+            <li><a class="menu" href="#">BLOG</a></li>
+            <li><a class="menu" href="#">DIY</a></li>
+            <li><a class="menu" href="#">CONTACT</a></li>
+          </ul>
+        </div>
+    
+        <button class="mobile-nav">
+          <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
+          <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
+        </button>
       </div>
       <div class="hero-description">
         <h1 class="primary-header">Essential Oils for a healthy lifestyle</h1>
@@ -57,6 +65,7 @@
       </div>
     </header>
     <main>
+ 
       <!-------- BASIC OILS ------------>
       <section class="basic-oils container pt-lg pb-lg">
         <div class="oils-header">
@@ -118,7 +127,7 @@
             all of us.
           </p>
         </div>
-        <div class="container t-grid grid-2">
+        <div class="container t-grid grid-2 t-wrapper">
           <div class="wrapper">
             <div class="description">
               <p>

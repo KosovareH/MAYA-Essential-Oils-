@@ -9,20 +9,23 @@
     url(../img/hero/hero.png);
   background-position: center;
   background-size: cover;
+
   display: flex;
   justify-content: space-between;
+
   padding: 2.4rem 4.8rem;
 }
 .logo img {
   width: 20rem;
-  margin: -25px;
-  padding: 0;
+  /* margin: -25px; */
+  /* padding: 0; */
 }
 .nav-bar li {
   list-style: none;
   display: inline-block;
   gap: 1.6rem;
-  align-items: right;
+  align-items: center;
+
   padding: 0.8rem 1.2rem;
   font-size: 1.6rem;
   font-weight: 500;
@@ -32,7 +35,7 @@
 .nav-bar li:visited {
   text-decoration: none;
   color: #3e2422;
-  transition: all 0.01s;
+  transition: all 10s;
 }
 .nav-bar li:hover,
 .nav-bar li:active {
@@ -47,16 +50,14 @@
 }
 .nav-bar li:hover::after {
   content: "";
-  width: 0%;
+  width: 100%;
   height: 2px;
   background: #f2d0c4;
   display: block;
   margin: auto;
-  transition: 0.01s;
+  transition: 10s;
 }
-.nav-bar ul li:hover::after {
-  width: 100%;
-}
+
 .hero-description {
   width: 90%;
   color: whitesmoke;
@@ -95,6 +96,21 @@
   background: #8e82c5;
   transition: 0.01s;
   margin: -2px;
+}
+.mobile-nav {
+  border: none;
+  padding: 1.6rem;
+  background-color: transparent;
+}
+
+.mobile-nav .mobile-nav-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #333;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
 }
 /*---------------- HERO END ---------------------*/
 /*---------------- OILS START -------------------*/
@@ -140,7 +156,8 @@
   padding-top: 9.6rem;
   padding-bottom: 6.4rem;
   text-align: center;
-  background-color: #ddd4d0;
+  /* background-color: #ddd4d0; */
+  background-color: #8e82c5;
 }
 .testimonial-header p {
   font-size: 1.8rem;
@@ -156,7 +173,7 @@
   border: 1px solid #c0c0c0;
   justify-items: center;
 
-  padding: 4.8rem;
+  padding: 4.83rem;
 }
 .description {
   font-size: 2.4rem;
@@ -279,16 +296,16 @@
 
 .footer-clean h3 {
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .footer-clean ul {
   padding: 0;
   list-style: none;
   line-height: 1.6;
-  font-size: 14px;
+  font-size: 1.4rem;
   margin-bottom: 0;
 }
 
@@ -309,7 +326,7 @@
 @media (max-width: 767px) {
   .footer-clean .item {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
   }
 }
 
@@ -320,16 +337,16 @@
 }
 
 .footer-clean .item.social > a {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  font-size: 2.4rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
   border: 1px solid #ccc;
-  margin-left: 10px;
-  margin-top: 22px;
+  margin-left: 1rem;
+  margin-top: 2.2rem;
   color: inherit;
   opacity: 0.75;
 }
@@ -340,19 +357,19 @@
 
 @media (max-width: 991px) {
   .footer-clean .item.social > a {
-    margin-top: 40px;
+    margin-top: 4rem;
   }
 }
 
 @media (max-width: 767px) {
   .footer-clean .item.social > a {
-    margin-top: 10px;
+    margin-top: 1rem;
   }
 }
 
 .footer-clean .copyright {
-  margin-top: 14px;
+  margin-top: 1.4rem;
   margin-bottom: 0;
-  font-size: 13px;
+  font-size: 1.3rem;
   opacity: 0.6;
 }
